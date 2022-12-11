@@ -1,18 +1,25 @@
 {
   "name": "backed",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "start": "babel-node app.js --exec",
     "dev": "nodemon app.js",
     "devbabel": "nodemon app.js --exec babel-node"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierguerrero777/servienvios.git"
+  },
   "keywords": [],
-  "author": "LosNovatos",
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierguerrero777/servienvios/issues"
+  },
+  "homepage": "https://github.com/javierguerrero777/servienvios#readme",
   "dependencies": {
-    "@babel/runtime": "^7.20.6",
-    "babel-node": "^0.0.1-security",
     "connect-history-api-fallback": "^2.0.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -21,40 +28,14 @@
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
     "@babel/node": "^7.20.5",
-    "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^9.1.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babelify": "^10.0.0"    
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0"    
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
     "@babel/node": "^7.20.5",
-    "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^9.1.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babelify": "^10.0.0",
-    "browserify": "^17.0.0",
-    "nodemon": "^2.0.20",
-    "watchify": "^4.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/javierguerrero777/servienvios.git"
-  },
-  "bugs": {
-    "url": "https://github.com/javierguerrero777/servienvios/issues"
-  },
-  "homepage": "https://github.com/javierguerrero777/servienvios#readme",
-  "description": ""
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0"
+  }
 }
