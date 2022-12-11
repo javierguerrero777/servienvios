@@ -1,15 +1,30 @@
+/*
+require('@babel/register')({
+    // Find babel.config.js up the folder structure.
+    rootMode: 'upward',
+  
+    // Since babel ignores all files outside the cwd, it does not compile sibling packages
+    // So rewrite the ignore list to only include node_modules
+    ignore: ['node_modules'],
+  });
+*/
 const express = require('express');
-
+//const mongoose = require('mongoose');
 const morgan = require('morgan');
+//const babel = require('babel');
 const cors = require('cors');
 const path = require('path');
 
 const app = express();
 
+
 //conexion local a base de de datos mongodb://localhost:27017/
 
 //conexión remota a la web de mongodb
 const mongoose = require('mongoose');
+
+mongoose.set('strictQuery', true);
+
 const url = 'mongodb+srv://edutechs_javieregm:kID2xhieY$U2@cluster0.l2fgml5.mongodb.net/misiontic?retryWrites=true&w=majority';
 
 const options = {useNewUrlParser: true, useUnifiedTopology: true};
